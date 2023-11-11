@@ -27,6 +27,12 @@ module.exports = {
         fadeIn: 'fadeIn .3s ease-in-out',
         carousel: 'marquee 60s linear infinite',
         blink: 'blink 1.4s both infinite'
+      },
+      dropShadow: {
+        glow: ['0 0px 20px rgba(255,255, 255, 0.35)', '0 0px 65px rgba(255, 255,255, 0.2)']
+      },
+      colors: {
+        taupe: '#8D818C'
       }
     }
   },
