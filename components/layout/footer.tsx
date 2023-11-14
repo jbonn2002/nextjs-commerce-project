@@ -5,7 +5,7 @@ import LogoSquare from 'components/logo-square';
 import { getMenu } from 'lib/shopify';
 import { Suspense } from 'react';
 
-const { COMPANY_NAME, SITE_NAME } = process.env;
+const { COMPANY_NAME, SITE_NAME, TWITTER_SITE, TWITTER_CREATOR } = process.env;
 
 export default async function Footer() {
   const currentYear = new Date().getFullYear();
@@ -45,10 +45,19 @@ export default async function Footer() {
             {copyrightName.length && !copyrightName.endsWith('.') ? '.' : ''} All rights reserved.
           </p>
           <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
-          <p>Designed in California</p>
+          <p>
+            {' '}
+            <a
+              href="https://vercel.com/templates/next.js/nextjs-commerce"
+              target="_blank"
+              className="text-black dark:text-white"
+            >
+              Template by ▲ Vercel
+            </a>
+          </p>
           <p className="md:ml-auto">
-            <a href="https://vercel.com" className="text-black dark:text-white">
-              Crafted by ▲ Vercel
+            <a href={TWITTER_SITE} target="_blank" className="text-black dark:text-white">
+              Crafted by {TWITTER_CREATOR}
             </a>
           </p>
         </div>
