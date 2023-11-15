@@ -19,7 +19,10 @@ const MainTitle = () => {
       </Balancer>
       <Balancer as="h1" className="text-xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
         An e-commerce shop built with <br />
-        everything new in <Link href="https://nextjs.org/">Next.js</Link>
+        everything new in{' '}
+        <Link href="https://nextjs.org/" target="_blank">
+          Next.js
+        </Link>
       </Balancer>
 
       <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
