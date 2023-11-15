@@ -13,13 +13,13 @@ const MainTitle = () => {
     >
       <Balancer
         as="h1"
-        className="hover:drop-shadow-glow text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
+        className="text-3xl font-bold hover:drop-shadow-glow sm:text-5xl md:text-6xl lg:text-7xl"
       >
         {SITE_NAME}
       </Balancer>
       <Balancer as="h1" className="text-xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
         An e-commerce shop built with <br />
-        everything new in Next.js
+        everything new in <Link href="https://nextjs.org/">Next.js</Link>
       </Balancer>
 
       <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
@@ -28,7 +28,7 @@ const MainTitle = () => {
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Link
           href="/products"
-          className="button-style bg-taupe hover:bg-taupe/70 h-10 px-4 py-2 text-black"
+          className="button-style h-10 bg-taupe px-4 py-2 text-black hover:bg-taupe/70"
         >
           Buy now
           <span className="sr-only">Buy now</span>
