@@ -1,9 +1,9 @@
 import Background from 'components/background';
 import Navbar from 'components/layout/navbar';
 import { ensureStartsWith } from 'lib/utils';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import { ReactNode, Suspense } from 'react';
-import './globals.css';
+import '../styles/globals.css';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -32,15 +32,14 @@ export const metadata = {
     })
 };
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter'
+const satoshi = localFont({
+  src: '../fonts/satoshi/Satoshi-Variable.woff2',
+  display: 'swap'
 });
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={satoshi.className}>
       <body className="bg-neutral-50 text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
         <Background />
         <Navbar />
