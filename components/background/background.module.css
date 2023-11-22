@@ -37,13 +37,7 @@
 .content {
   z-index: 3;
   width: 100%;
-  max-width: 640px;
-  /* background-image: radial-gradient(
-    circle,
-    rgba(154, 210, 130, 1) 9%,
-    rgba(86, 139, 83, 1) 28%,
-    rgba(127, 176, 147, 1) 62%
-  ); */
+  background-image: radial-gradient(rgb(141, 129, 140), rgb(221, 214, 254), rgb(136, 132, 255));
   position: absolute;
   content: '';
   width: 100%;
