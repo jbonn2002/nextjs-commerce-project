@@ -31,7 +31,7 @@ const MainTitle = () => {
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Link
           href="/products"
-          className="button-style h-10 bg-taupe px-4 py-2 text-black hover:bg-taupe/70"
+          className="button-style bg-customViolet hover:bg-customViolet/70 h-10 px-4 py-2 text-white"
         >
           Buy now
           <span className="sr-only">Buy now</span>
