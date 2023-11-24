@@ -26,12 +26,12 @@ const MainTitle = () => {
       </Balancer>
 
       <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
-        An e-commerce skateshop built with everything new in Next.js
+        Lorem ipsum dolor sit amet
       </Balancer>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Link
           href="/products"
-          className="button-style bg-customViolet hover:bg-customViolet/70 h-10 px-4 py-2 text-white"
+          className="button-style h-10 bg-customViolet px-4 py-2 text-white hover:bg-customViolet/70"
         >
           Buy now
           <span className="sr-only">Buy now</span>
