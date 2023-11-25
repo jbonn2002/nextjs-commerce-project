@@ -38,7 +38,7 @@ const MainTitle = () => {
         </Link>
         <Link
           href="/dashboard/stores"
-          className="button-style h-10 bg-black px-4 py-2 hover:bg-black/70"
+          className="button-style h-10 bg-black px-4 py-2 hover:bg-black/50"
         >
           Sell now
           <span className="sr-only">Sell now</span>
