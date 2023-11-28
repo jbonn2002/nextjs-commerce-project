@@ -33,7 +33,7 @@ module.exports = {
       },
       colors: {
         customViolet: '#1b193f',
-        customColor: '#f9fcff'
+        ghostWhite: '#f9fcff'
       }
     }
   },

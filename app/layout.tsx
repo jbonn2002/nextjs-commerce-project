@@ -40,7 +40,7 @@ const satoshi = localFont({
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={satoshi.className}>
-      <body className="bg-customColor text-black selection:bg-teal-300">
+      <body className="bg-ghostWhite text-black selection:bg-teal-300">
         <Background />
         <Navbar />
         <Suspense>
