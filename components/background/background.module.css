@@ -31,13 +31,15 @@
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0.2;
+  opacity: 0.5;
+  filter: invert(100%);
 }
 
 .content {
   z-index: 3;
   width: 100%;
-  background-image: radial-gradient(rgb(23, 23, 23), rgb(136, 132, 255), rgb(31, 3, 24));
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+
   position: absolute;
   content: '';
   width: 100%;

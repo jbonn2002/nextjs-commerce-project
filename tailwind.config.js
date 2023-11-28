@@ -32,7 +32,8 @@ module.exports = {
         glow: ['0 0px 20px rgba(255,255, 255, 0.35)', '0 0px 65px rgba(255, 255,255, 0.2)']
       },
       colors: {
-        customViolet: '#1b193f'
+        customViolet: '#1b193f',
+        customColor: '#f9fcff'
       }
     }
   },
