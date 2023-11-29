@@ -1,3 +1,4 @@
+import TextEffect from 'components/text-effect';
 import Link from 'next/link';
 import { Balancer } from 'react-wrap-balancer';
 const { SITE_NAME } = process.env;
@@ -11,13 +12,8 @@ const MainTitle = () => {
       aria-labelledby="hero-heading"
       className="mx-auto flex w-full flex-col items-center justify-center gap-4 py-12 text-center md:pt-32"
     >
-      <Balancer
-        as="h1"
-        className="text-3xl font-bold hover:drop-shadow-glow sm:text-5xl md:text-6xl lg:text-7xl"
-      >
-        {SITE_NAME}
-      </Balancer>
-      <Balancer as="h1" className="text-xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+      <TextEffect />
+      <Balancer as="h1" className="text-xl sm:text-3xl md:text-4xl lg:text-5xl">
         An e-commerce shop built with <br />
         everything new in{' '}
         <Link href="https://nextjs.org/" target="_blank">
