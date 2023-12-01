@@ -16,7 +16,7 @@ const MainTitle = () => {
       <Balancer as="h1" className="text-xl sm:text-3xl md:text-4xl lg:text-5xl">
         An e-commerce shop built with <br />
         everything new in{' '}
-        <Link href="https://nextjs.org/" target="_blank">
+        <Link href="https://nextjs.org/" target="_blank" className="link-underline">
           Next.js
         </Link>
       </Balancer>
