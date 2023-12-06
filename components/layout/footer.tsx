@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import FooterMenu from 'components/layout/footer-menu';
 import LogoSquare from 'components/logo-square';
+import TextEffect from 'components/text-effect';
 import { getMenu } from 'lib/shopify';
 import { Suspense } from 'react';
 
@@ -20,7 +21,7 @@ export default async function Footer() {
         <div>
           <Link className="flex items-center gap-2 text-black md:pt-1" href="/">
             <LogoSquare size="sm" />
-            <span className="uppercase">{SITE_NAME}</span>
+            <TextEffect text={SITE_NAME} small={true} />
           </Link>
         </div>
         <Suspense

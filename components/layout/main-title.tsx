@@ -12,7 +12,10 @@ const MainTitle = () => {
       aria-labelledby="hero-heading"
       className="mx-auto flex w-full flex-col items-center justify-center gap-4 py-12 text-center md:pt-32"
     >
-      <TextEffect />
+      <TextEffect
+        text={SITE_NAME}
+        className="text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl"
+      />
       <Balancer as="h1" className="text-xl sm:text-3xl md:text-4xl lg:text-5xl">
         An e-commerce shop built with <br />
         everything new in{' '}

@@ -3,13 +3,22 @@ const { SITE_NAME } = process.env;
 import Balancer from 'react-wrap-balancer';
 import styles from './text.module.css';
 
-export default function TextEffect() {
+export default function TextEffect({
+  text,
+  small,
+  ...props
+}: {
+  text: string | undefined;
+  small?: boolean;
+  className?: string;
+}) {
   return (
-    <Balancer
-      as="h1"
-      className={`${styles.body} text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl`}
-    >
-      <span className={styles.h1}>{SITE_NAME}</span>
+    <Balancer as="h1" {...props}>
+      <span
+        className={`${styles.h1} ${small === true ? 'animate-textSmall' : 'animate-textLarge'}`}
+      >
+        {text}
+      </span>
     </Balancer>
   );
 }

@@ -13,6 +13,16 @@ module.exports = {
           from: { opacity: 0 },
           to: { opacity: 1 }
         },
+        textLarge: {
+          '0%': { backgroundPosition: '0' },
+          '60%': { backgroundPosition: '600px' },
+          '100%': { backgroundPosition: '600px' }
+        },
+        textSmall: {
+          '0%': { backgroundPosition: '0' },
+          '60%': { backgroundPosition: '300px' },
+          '100%': { backgroundPosition: '300px' }
+        },
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' }
@@ -26,7 +36,9 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn .3s ease-in-out',
         carousel: 'marquee 60s linear infinite',
-        blink: 'blink 1.4s both infinite'
+        blink: 'blink 1.4s both infinite',
+        textLarge: 'textLarge 3s infinite linear',
+        textSmall: 'textSmall 3s infinite linear'
       },
       dropShadow: {
         glow: ['0 0px 20px rgba(255,255, 255, 0.35)', '0 0px 65px rgba(255, 255,255, 0.2)']
