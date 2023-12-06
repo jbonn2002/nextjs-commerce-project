@@ -20,8 +20,8 @@ module.exports = {
         },
         textSmall: {
           '0%': { backgroundPosition: '0' },
-          '60%': { backgroundPosition: '300px' },
-          '100%': { backgroundPosition: '300px' }
+          '60%': { backgroundPosition: '150px' },
+          '100%': { backgroundPosition: '150px' }
         },
         marquee: {
           '0%': { transform: 'translateX(0%)' },
