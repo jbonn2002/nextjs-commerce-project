@@ -25,7 +25,7 @@ const MainTitle = () => {
       </Balancer>
 
       <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
-        Lorem ipsum dolor sit amet
+        Using Shopify as CMS
       </Balancer>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Link
