@@ -25,7 +25,11 @@ const MainTitle = () => {
       </Balancer>
 
       <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
-        Using Shopify as CMS
+        Using{' '}
+        <Link href="https://www.shopify.com/" target="_blank" className="link-underline">
+          Shopify
+        </Link>{' '}
+        as CMS
       </Balancer>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Link
