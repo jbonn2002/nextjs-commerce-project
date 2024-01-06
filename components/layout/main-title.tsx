@@ -24,9 +24,13 @@ const MainTitle = () => {
         </Link>
       </Balancer>
 
-      <Balancer className="text-muted-foreground max-w-[42rem] leading-normal sm:text-xl sm:leading-8">
+      <Balancer className="text-muted-foreground max-w-[42rem] leading-normal text-neutral-600 sm:text-xl sm:leading-8">
         Using{' '}
-        <Link href="https://www.shopify.com/" target="_blank" className="link-underline">
+        <Link
+          href="https://www.shopify.com/"
+          target="_blank"
+          className=" hover:text-black hover:underline"
+        >
           Shopify
         </Link>{' '}
         as CMS
